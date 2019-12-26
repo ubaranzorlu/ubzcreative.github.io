@@ -1,0 +1,10 @@
+<div id="umut-big" {% if page.title == "Umut Baran ZORLU" %}class="anasayfa"{% endif %} {% if page.image %}style="background-image: url({{ site.baseurl}}{{ page.image }});" {% endif %}>
+    <div class="cont">
+            <div class="overlay">
+                {{ if page.title-above }}<span class="baslik-ustu">{{ page.title-above }}</span>{{ endif }}
+                <h1 class="sayfa-basligi">{{ page.title }}</h1>
+                {{ if page.excerpt }}<div class="sayfa-ozeti"><p>{{ page.excerpt | remove: '<p>' | remove: '</p>' }}</p></div>{{ endif }}
+                {% include breadcrumbs %}
+            </div>
+    </div>
+</div>

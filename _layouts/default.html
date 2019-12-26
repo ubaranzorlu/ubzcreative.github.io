@@ -1,0 +1,108 @@
+<!-- P.S. Caramel Macchiato seviyorum. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  </head>
+
+  <body>
+
+        <header>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 baslik">
+                    <a href="{{ site.baseurl }}/">
+                      <h3 class="isim logo">
+                        U<span class="gizle">mut</span>
+                        B<span class="gizle">aran</span>
+                        Z<span class="gizle">ORLU</span>
+                      </h3>
+                    </a> 
+              </div>
+              <div class="col-lg-6">
+                  <div class="hamburger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                  <nav class="ana-menu">
+                      <a href="{{ site.baseurl }}/">BLOG</a>
+                      <a href="{{ site.baseurl }}/hakkimda">HAKKIMDA</a>
+                      <a href="https://www.instagram.com/ubz.creative/">PORTFOLYO</a>
+                      <a href="{{ site.baseurl }}/cv" target="_blank">CV</a>
+                      <a href="{{ site.baseurl }}/iletisim" data-toggle="tooltip" data-placement="bottom" title="Adım Garavel değil, ama yine de beni bulman gerekiyorsa tıkla!">İLETİŞİM</a>
+                    </nav>
+              </div>
+              <div class="col-lg-3">
+                <nav class="sosyal">
+                  {% if site.social-links.facebook %}<a href="https://www.facebook.com/{{ site.social-links.facebook }}"><i class="fab fa-facebook-f"></i></a>{% endif %}
+                  {% if site.social-links.twitter %}<a href="https://www.twitter.com/{{ site.social-links.twitter }}"><i class="fab fa-twitter"></i></a>{% endif %}
+                  {% if site.social-links.instagram %}<a href="https://instagram.com/{{ site.social-links.instagram }}"><i class="fab fa-instagram"></i></a>{% endif %}
+                  {% if site.social-links.linkedin %}<a href="https://www.linkedin.com/in/{{ site.social-links.linkedin }}"><i class="fab fa-linkedin"></i></a>{% endif %}
+                  {% if site.social-links.spotify %}<a href="http://open.spotify.com/user/{{ site.social-links.linkedin }}"><i class="fab fa-spotify"></i></a>{% endif %}
+                  {% if site.social-links.rss %}<a href="{{ site.baseurl }}/feed.xml"><i class="fas fa-rss"></i></a>{% endif %}
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+    
+        {% include title.html %}
+
+    <main role="main">
+      {{ content }}
+    </main>
+
+    <div id="instafeed">
+        <div class="followme">
+          <a href="https://instagram.com/ubaranzorlu">
+            <span class="insta_username"></span>
+            <img src="" class="profilepic" alt="">
+            <div class="img-overlay"><i class="fab fa-instagram"></i></div>
+          </a>
+        </div>
+    </div>
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+               <h6 class="alinti">Umudunu yitirme, aradığın güç içinde, beni bul!</h6>
+               <p class="mail isim"><a href="mailto:umut@baranzorlu.com">
+                 u<span class="gizle">mut@</span>b<span class="gizle">aran</span>z<span class="gizle">orlu.com</span>
+                </a></p>
+               <nav class="sosyal">
+                  {% if site.social-links.facebook %}<a href="https://www.facebook.com/{{ site.social-links.facebook }}"><i class="fab fa-facebook-f"></i></a>{% endif %}
+                  {% if site.social-links.twitter %}<a href="https://www.twitter.com/{{ site.social-links.twitter }}"><i class="fab fa-twitter"></i></a>{% endif %}
+                  {% if site.social-links.instagram %}<a href="https://instagram.com/{{ site.social-links.instagram }}"><i class="fab fa-instagram"></i></a>{% endif %}
+                  {% if site.social-links.linkedin %}<a href="https://www.linkedin.com/in/{{ site.social-links.linkedin }}"><i class="fab fa-linkedin"></i></a>{% endif %}
+                  {% if site.social-links.spotify %}<a href="http://open.spotify.com/user/{{ site.social-links.linkedin }}"><i class="fab fa-spotify"></i></a>{% endif %}
+                  {% if site.social-links.rss %}<a href="{{ site.baseurl }}/feed.xml"><i class="fas fa-rss"></i></a>{% endif %}
+                </nav>
+        </div>
+      </div>
+      
+    </footer>
+
+    {% include analytics.html %}
+
+    <script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
+    <script async src="{{ site.baseurl }}/assets/js/bootstrap.bundle.min.js"></script>
+    <script async src="{{ site.baseurl }}/assets/js/instafeed.min.js"></script>
+    <script async src="{{ site.baseurl }}/assets/js/jquery.colorbox-min.js"></script>
+    <script async src="{{ site.baseurl }}/assets/js/script.js"></script>
+    {% if page.js %} <script src="{{ site.baseurl }}/assets/js/js.cookie.js"></script>
+    <script async src="{{ site.baseurl }}/assets/js/{{ page.js }}.js"></script> {% endif%}
+  </body>
+</html>

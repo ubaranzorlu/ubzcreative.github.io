@@ -1,0 +1,39 @@
+<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+    <li class="breadcrumb-item breadcrumb-item-icon" property="itemListElement" typeof="ListItem">
+        <a property="item" typeof="WebPage" href="{{ site.baseurl }}/">
+           <span class="icon isim" property="name">
+                U<span class="gizle">mut</span>
+                B<span class="gizle">aran</span>
+                Z<span class="gizle">ORLU</span>
+            </span>
+           <meta property="position" content="1" />
+        </a>
+     </li>
+{% assign crumbs = page.url | split: '/' %}
+{% for crumb in crumbs offset: 1 %}
+  {% if forloop.last %}
+    <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+      <span property="name">
+          {% assign baslik = crumb | replace:'-',' ' | remove:'/index.html' | capitalize%}
+          {% assign sorgu = baslik | plus:0 %}
+          {% if sorgu != 0 %}
+              {{ baslik }}
+          {% else %}
+           {{ page.title }}
+          {% endif %}
+      </span>
+      <meta property="position" content="{{ forloop.index | plus: 1  }}" />
+    </li>
+  {% else %}
+  <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+      <a property="item" typeof="WebPage" href="{% assign crumb_limit = forloop.index | plus: 1 %}{{site.baseurl}}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">
+         <span property="name">{{ crumb | replace:'-',' ' | remove:'/index.html' | capitalize }}</span>
+         <meta property="position" content="{{ forloop.index | plus: 1 }}" />
+      </a>
+   </li>
+    {% endif %}
+{% endfor %}
+
+</ol>
+</nav>

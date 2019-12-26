@@ -1,0 +1,96 @@
+body{
+        font-family: 'Open Sans', sans-serif;
+        background-color: #FFA40D;
+        color:#fff;
+        margin:0;
+      }
+      hgroup{
+        font-family: 'Montserrat', sans-serif;
+      }
+      header{
+        width:100%;
+      }
+      .logo{
+        margin-top:30px;
+      }
+      .wrapper{
+        width:600px;
+        margin:0 auto;
+      }
+      #bar{
+        font-size:11pt;
+        padding:10px 0px;
+        width:100%;
+        background-color: rgba(255, 71, 0, 0.25);
+      }
+      .sol{
+        float:left;
+      }
+      .sag{
+        float:right;
+      }
+      .temizle{
+        clear:both;
+      }
+      .social{
+        color:#fff;
+        margin-left:5px;
+      }
+      .social img{
+        display:inline;
+        width:12px;
+        height:12px;
+      }
+      .baslik h1{
+        margin-top:0;
+      }
+      .article{
+        background-color: #fff;
+        color:#393E46;
+        padding:10px 20px;
+      }
+      .article p{
+        font-size:10pt;
+      }
+      .aydinlat{
+        color:#FF4700;
+      }
+      .yuvarla{
+        border-radius: 50%;
+        width:22px;
+        height:22px;
+        float:left;
+        padding:10px 10px 10px 10px;
+        background-color: #393E46;
+      }
+      .sosyal a .yuvarla{
+          margin-left:10px;
+      }
+      .sosyal{
+       margin:0 auto;
+       width:228px;
+       margin-top:30px;
+       margin-bottom:50px;
+      }
+      footer p{
+        font-size:9pt;
+        color:#393E46;
+      }
+      footer p a{
+        font-size:9pt;
+        color:#393E46;
+        font-weight:bold;
+      }
+      footer p a:hover{
+        color:#000!important;
+      }
+      .basvur button{
+        background-color: #FFA40D;
+        color:#fff;
+        font-weight: bold;
+        border: medium none;
+        cursor: pointer;
+        font-size:12pt;
+        padding: 8px;
+        margin-bottom: 20px;
+      }

@@ -1,0 +1,32 @@
+---
+layout: page
+title: İletişim
+permalink: /iletisim/
+excerpt: Adım Garavel değil, ama yine de beni bulman gerekiyorsa bu sayfa işini görecektir.
+image: /images/umut-baran-zorlu-quidditch-forma.jpg
+---
+
+<form method="POST" action="https://server.baranzorlu.com/post.php" id="iletisim">
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label for="isim">İsminiz</label>
+            <input type="text" class="form-control" autocomplete="name" name="isim" id="isim" placeholder="" required>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="email">E-Posta Adresiniz</label>
+            <input type="email" autocomplete="email" class="form-control" name="email" id="email" placeholder="" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="konu">Konu</label>
+        <input type="text" class="form-control" name="konu" id="konu" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="mesaj">Mesaj</label>
+        <textarea class="form-control" name="mesaj" id="mesaj" placeholder="" rows="4" required></textarea>
+    </div>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <div class="g-recaptcha" data-sitekey="6LfjPVwUAAAAAG4_0_Bu1sk45LDaVdjLNRz19cjb"></div>
+    <input type="submit" style="margin-top:10px;" class="btn btn-outline-primary" value="Gönder">
+</form>
+<div id="sonuc"></div>

@@ -1,0 +1,42 @@
+---
+title: Umut Baran ZORLU
+title-above: Selam, ben
+excerpt: Sorunları çözmeye odaklandığımdan kendimi bir <b>Sihirbaz</b> olarak tanımlıyorum. Sihirbaz'ın <b>büyü kitabı</b>'na hoş geldiniz!
+layout: default
+image: /images/umut-baran-zorlu-on-stage.jpg
+---
+<div class="container">
+    <div class="posts">
+        {% for post in paginator.posts %}
+          <article class="post listing">
+            <div style="background-image:url('{{ site.baseurl }}{{ post.image }}');" class="featured-image">
+              <div class="overlay"><h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2></div></div>
+            <div class="container">
+              <p class="post-meta">Umut Baran ZORLU - {{ post.date | date: '%B %d, %Y' }} - <a href="https://maps.google.com/maps?q={{ post.location.latitude }},{{ post.location.longitude }}" target="_blank" alt="{{ post.title }} Lokasyonu">{{ post.location.latitude }}, {{ post.location.longitude }}</a> </p>
+                <div class="entry">
+                  {{ post.excerpt }}
+                </div>
+                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><button type="button" class="btn btn-outline-primary">Devamını Oku</button></a>
+            </div>
+          </article>
+        {% endfor %}
+        
+          <div class="row pagination">
+            <div class="col-3">
+                {% if paginator.previous_page %}
+                  <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fas fa-long-arrow-alt-left"></i> Önceki</a>
+                {% else %}
+                  <span class="previous"><i class="fas fa-long-arrow-alt-left"></i> Önceki</span>
+                {% endif %}
+            </div>
+            <div class="col-6"><span class="page_number ">Sayfa: <b>{{ paginator.page }}</b> / {{ paginator.total_pages }}</span></div>
+            <div class="col-3">
+              {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="next">Sonraki <i class="fas fa-long-arrow-alt-right"></i></a>
+              {% else %}
+                <span class="next ">Sonraki <i class="fas fa-long-arrow-alt-right"></i></span>
+              {% endif %}
+            </div>
+        </div>
+      </div>
+</div>

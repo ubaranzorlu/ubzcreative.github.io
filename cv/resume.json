@@ -1,0 +1,215 @@
+{
+  "basics": {
+    "name": "Umut Baran ZORLU",
+    "label": "Magician",
+    "picture": "https://media.licdn.com/dms/image/C4E03AQFr5kJFv4ccFw/profile-displayphoto-shrink_200_200/0?e=1533168000&v=beta&t=c_lxCan7hl5eku7WENKTz2VjWyQL0NvgcElg6FA_fgk",
+    "email": "umut@baranzorlu.com",
+    "phone": "+90 543 297 66 28",
+    "website": "https://baranzorlu.com",
+    "summary": "Executive Software Development at guttobizLAB",
+    "location": {
+      "address": "Boğaziçi Üniversitesi Hisar Kampüsü",
+      "postalCode": "34342",
+      "city": "Bebek",
+      "countryCode": "TR",
+      "region": "Istanbul"
+    },
+    "profiles": [{
+      "network": "Twitter",
+      "username": "ubaranzorlu",
+      "url": "https://twitter.com/ubaranzorlu"
+    },{
+      "network": "Facebook",
+      "username": "ubaranzorlu",
+      "url": "https://facebook.com/ubaranzorlu"
+    },{
+      "network": "Instagram",
+      "username": "ubz.rocks",
+      "url": "https://instagram.com/ubz.rocks"
+    },{
+      "network": "LinkedIn",
+      "username": "ubaranzorlu",
+      "url": "https://linkedin.com/in/ubaranzorlu"
+    },{
+      "network": "Google Plus",
+      "username": "UmutBaranZORLU",
+      "url": "https://plus.google.com/+UmutBaranZORLU"
+    },{
+      "network": "Spotify",
+      "username": "ubaranzorlu",
+      "url": "https://open.spotify.com/user/ubaranzorlu"
+    }]
+  },
+  "work": [{
+    "company": "guttobizLAB",
+    "position": "Executive Software Development",
+    "website": "https://guttobizlab.org",
+    "startDate": "2018-03-01",
+    "summary": "I've been working on the latest product of us \"Comparisonator \""
+  },{
+    "company": "Hackquarters",
+    "position": "Pioneers Program Alpha",
+    "website": "https://hackquarters.co",
+    "startDate": "2017-10-01",
+    "summary": "I have participated several organizations of Hackquarters and been a part of Beta team for a short time. I went back to Alpha team by my request."
+  },{
+    "company": "Muba Computer Ltd.",
+    "position": "Web Developer",
+    "website": "https://muba.biz",
+    "startDate": "2012-07-01",
+    "endDate": "2017-08-01",
+    "summary": "I was working at Muba as web developer. I have built the main web server. I created nearly 20 corporate websites here."
+  }],
+  "volunteer": [{
+    "organization": "1 Genç 1 Gelecek",
+    "position": "Online Marketing Director",
+    "website": "http://1genc1gelecek.com/",
+    "startDate": "2017-08-01",
+    "endDate": "2018-03-01",
+    "summary": "I was maintaining all social media accounts and creating posts' content. I have built the 1 Genç 1 Gelecek Blog ",
+    "highlights": [
+      "Participated to organization of 101:Giriş",
+      "Participated to organization of ODIN",
+      "Participated to organization of Ideathon for Youth"
+    ]
+  },
+  {
+    "organization": "Compec - Boğaziçi University IT Club",
+    "position": "Active Member",
+    "website": "http://compec.boun.edu.tr",
+    "startDate": "2017-09-01",
+    "summary": "I have been on E-Founder Organization Team & participated club's events.",
+    "highlights": [
+      "E-Founder - Boğaziçi Dijital Girişimcilik Zirvesi",
+      "Boğaziçi Bilişim Ödülleri"
+    ]
+  },
+  {
+    "organization": "<balkod /> - Coding Society",
+    "position": "Founding President & Instructor",
+    "website": "http://balkod.org/",
+    "startDate": "2016-10-01",
+    "summary": "<balkod /> Coding Society was founded in 2016 to become a pathway to Besiktas Anatolian High School students wishing to pursue a career in CS field. <balkod /> has since been an organiser of informative speeches and voluntary lessons.I was maintaining all social media accounts and creating posts' content. I have built the 1 Genç 1 Gelecek Blog ",
+    "highlights": [
+      "Started the Society",
+      "Started HTML Lectures",
+      "Started the Robotics Team"
+    ]
+  },
+  {
+    "organization": "BALSPORTSFEST '16",
+    "position": "Marketing Director",
+    "website": "http://balsportsfest.com/",
+    "startDate": "2015-11-01",
+    "endDate": "2016-08-01",
+    "summary": "I created the website, I organized sponsorships, I created event-related graphics (banners,logos,social-media posts, tickets etc). I welcomed foreign students.",
+    "highlights": [
+      "Besiktas Anatolian High School International Sports Fest 2016"
+    ]
+  }],
+  "education": [{
+    "institution": "Bogazici University",
+    "area": "Management Information Systems",
+    "studyType": "Bachelor",
+    "startDate": "2017-08-01",
+    "gpa": "-",
+    "courses": []
+  },{
+    "institution": "Besiktas Anatolian High School",
+    "area": "Maths & Science",
+    "studyType": "Secondary School",
+    "startDate": "2013-09-07",
+    "endDate": "2017-06-07",
+    "gpa": "3.4",
+    "courses": [
+        "Maths",
+        "Physics",
+        "Biology",
+        "Chemistry",
+        "Turkish Literature",
+        "Geography",
+        "History",
+        "English",
+        "German"
+    ]
+  }],
+  "awards": [],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "WordPress",
+      "Javascript",
+      "Node.JS",
+      "jQuery"
+    ]
+  },{
+    "name": "Design",
+    "level": "Master",
+    "keywords": [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Adobe XD"
+    ]
+  },{
+    "name": "Video Editing",
+    "level": "Intermediate",
+    "keywords": [
+      "Adobe After Effects",
+      "Adobe Premiere Pro",
+      "Sony Vegas Pro"
+    ]
+  },{
+    "name": "Audio Editing",
+    "level": "Intermediate",
+    "keywords": [
+      "Audacity",
+      "Garage Band",
+      "Guitar Rig"
+    ]
+  },{
+    "name": "Electric Guitar",
+    "level": "Intermediate",
+    "keywords": [
+      "Fender Stratocaster"
+    ]
+  }],
+  "languages": [{
+    "language": "Turkish",
+    "fluency": "Native speaker"
+  },{
+    "language": "English",
+    "fluency": "Advanced"
+  },{
+    "language": "German",
+    "fluency": "Beginner"
+  }],
+  "interests": [{
+    "name": "Music",
+    "keywords": [
+      "Hard Rock",
+      "Blues",
+      "Heavy Metal",
+      "Alternative Rock",
+      "Art Rock"
+    ]
+  }],
+  "references": [{
+    "name": "Başaran İşeri",
+    "reference": ""
+  },{
+    "name": "Ahmet Öztekin",
+    "reference": ""
+  },{
+    "name": "Tarkan Batgün",
+    "reference": ""
+  },{
+    "name": "Oğuz Han Taşar",
+    "reference": ""
+  },{
+    "name": "Mitat Zorlu",
+    "reference": ""
+  }]
+}
